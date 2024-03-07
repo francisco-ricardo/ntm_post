@@ -1,0 +1,47 @@
+\section{TRADU\c C\~AO AUTOM\'ATICA NEURAL}
+
+At\'e h\'a alguns anos o desenvolvimento de sistemas de tradu\c c\~ao autom\'atica 
+(Machine Translation, ou MT) era, em sua maioria, implementado atrav\'es de t\'ecnicas 
+estat\'isticas, conhecidas como Tradutor de M\'aquinas Estat\'isticas 
+(Statistical Machine Translation, ou SMT).
+Estas t\'ecnicas tornaram capaz a extra\c c\~ao de informa\c c\~oes impl\'icitas a partir de
+\emph{copora bil\'ingues}, \cite{brown:1993}. Por\'em, em \textcite{maruf:2021}, verifica-se que 
+as caracter\'isticas do \emph{SMT} eram intr\'insecas \`a tecnologia e isto tornava estas 
+t\'ecnicas inflex\'iveis. V\'arios trabalhos t\^em impulsionado o emprego de redes 
+neurais no Processamento de Linguagem Natural (NLP), conforme pode ser verificado em 
+\textcite{goldberg:2016}. Por\'em, a maioria das abordagens consistiam em utilizar redes neurais 
+como sendo componentes em sistemas \emph{STM} tradicionais, apenas substuindo algumas 
+partes da arquitetura, como pode ser notado em \textcite{stahlberg:2020}.
+
+O processo de \emph{MT} tem avan\c cado para o uso de sistemas conhecidos como Tradu\c c\~ao 
+Autom\'atica Neural (Neural Machine Translation, ou NMT).
+Estes sistemas s\~ao baseados em redes neurais que fazem a tradu\c c\~ao das senten\c cas.
+\emph{NMT} vem se tornando o paradigma dominante para a pesquisa e o desenvolvimento 
+de sistemas de \emph{MT} e tem sido utilizado em sistemas de produ\c c\~ao, como na Google
+\cite{wu:2016}, por exemplo.
+
+O uso de Redes Neurais Profundas (Deep Neural Network, ou DNN) no processo de \emph{MT}
+tem se destacado atrav\'es dos modelos Sequ\^encia a Sequ\^encia, que fazem o uso de 
+Redes Neurais Recorrentes (Recurrent Neural Networks, ou RNNs).
+A arquitetura b\'asica destes modelos consiste em um codificador RNN que percorre cada 
+token da senten\c ca de origem e gera um vetor de estado com tamanho fixo.
+Na sequ\^encia, um decodificador RNN gera a senten\c ca de destino, um token de cada vez,
+a partir do vetor de estado, como pode ser visto em \textcite{sutskever:2014}.
+Os autores em \textcite{kalchbrenner:2016} utilizam uma Rede Neural Convolucional (Convolutional 
+Neural Network, ou CNN). O codificador e o decodificador s\~ao conectados e as sequ\^encias 
+temporais s\~ao preservadas. Os autores introduziram um mecanismo para tratar das 
+diferen\c cas entre o comprimento da origem e o comprimento do destino.
+
+Outra arquitetura utilizada em sistemas NMT \'e o modelo Transformador, introduzido por
+\textcite{vaswani:2017attention}. Este modelo dispensa o uso de recorr\^encia e convolu\c c\~ao
+e utiliza um mecanismo conhecido como Aten\c c\~ao.
+Este mecanismo baseia-se em uma fun\c c\~ao que mapeia perguntas e um conjunto de pares do 
+tipo \emph{chave-valor} para uma sa\'ida. As perguntas, as chaves, os valores e a sa\'ida
+correspondem a vetores. A sa\'ida \'e calculada atrav\'es de uma soma ponderada dos valores,
+aonde o peso associado para cada valor \'e calculado atrav\'es de uma fun\c c\~ao de 
+compatibilidade entre a pergunta e a chave correspondente.
+
+A Tradução Automática Neural poderia ser aplicada para a conversão dos dialetos RS274-D 
+para as Funções Canônicas de Usinagem. Porém, vale observar que isto demandaria a obtenção de 
+um acervo de programas escritos nos diversos dialetos para vialibilizar os processos de 
+treinamento e teste da rede neural.
