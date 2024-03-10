@@ -1,12 +1,11 @@
-version: "3.9"
 services:
-  dissertacao:
+  articles_pub:
     build: 
       context: .
       dockerfile: Dockerfile
       shm_size: '1gb'
-    image: article_ntm:latest
-    container_name: article_ntm
+    image: articles_pub:latest
+    container_name: articles_pub
     cpus: 0.75
     mem_reservation: '1024M'
     mem_limit: '2048M'
@@ -14,5 +13,5 @@ services:
     network_mode: host
     restart: unless-stopped
     volumes:
-      - .:/article
+      - .:/articles
 

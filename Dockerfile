@@ -14,13 +14,10 @@ RUN apt update -y && export DEBIAN_FRONTEND=noninteractive && apt install -y \
     biber \
     abntex \
     pandoc \
-    pandoc-citeproc \
-    pandoc-sidenote \
-    pandoc-citeproc-preamble \
     && rm -Rf /var/lib/apt/lists/*
 
-ENTRYPOINT ["/article/scripts/docker-entrypoint.sh"]
-CMD ["/article/scripts/docker-cmd-script.sh"]
+ENTRYPOINT ["/articles/scripts/docker-entrypoint.sh"]
+CMD ["/articles/scripts/docker-cmd-script.sh"]
 
 
 
