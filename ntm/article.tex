@@ -1,5 +1,6 @@
 \documentclass[a4paper]{article}
 
+\usepackage{amssymb}
 \usepackage[shortlabels]{enumitem}
 \usepackage{indentfirst}
 
@@ -34,18 +35,31 @@
     \maketitle
 
     Until a few years ago the development of Machine Translation (MT) 
-    systems was mostly implemented by statistical techniques, know as 
+    systems was mostly implemented by statistical techniques, known as 
     Statistical Machine Translation (SMT).
     Those techniques became able to extract implicit information from
     \emph{copora bil\'ingues} , \cite{brown:1993}.
     However, the authors of \cite{maruf:2021} noted that the SMT features
     were intrinsic to the used technologies and this made the approach
-    inflexible. Several works have boosted the employment of neural 
+    inflexible. 
+    
+    Several works have boosted the employment of neural 
     networks on Natural Language Processing (NLP), as noted by 
     \cite{goldberg:2016}.
     However, the majority of the approachs consist of using Neural Networks
     as components in traditonal systems, only replacing some parts of the
     architecture, as verified by \cite{stahlberg:2020}.
+
+    An approach used to NLP processing consists of representing the words 
+    or sentences as continuous vector. This technique is used in language 
+    modeling to transform a word $x \in \sum$ in a vector of dimension 
+    $d$ of real numbers to be processed in subsequent layers of neural network.
+    The word mapping can be represented by a matrix  
+    $E \in \mathbb{R} ^{d \times |\sum|}$, as verified by \cite{collobert:2008} 
+    and \cite{stahlberg:2020}.
+    According to \cite{stahlberg:2020} the learning from words representation 
+    has the potential to capture morphological, syntactic and semantic 
+    similarity between words.    
 
     MT has advanced to the use of systems known as 
     Neural Machine Translation (NMT). These systems are based on Neural 
@@ -73,23 +87,7 @@
     a function of compatibility between the question and the corresponding 
     key.
 
-    TODO
-
-    An approach used to NLP processing consists of representing the words 
-    or sentences as continuous vector. This technique is used in language 
-    modeling to transform a word $x \in \sum$ in a vector of dimension 
-    $d$ of real numbers to be processed in subsequent layers of neural network.
-
-    
-    Uma t\'ecnica utilizada para o processamento de \emph{NLP} \'e definir a representa\c c\~ao 
-    de palavras ou frases como vetores cont\'inuos. Esta t\'ecnica \'e utilizada em modelagem de 
-    linguagens aonde a id\'eia \'e transformar uma palavra $x \in \sum$ em um vetor de dimens\~ao 
-    $d$ de n\'umeros reais para ser processado em camadas subsequentes da rede neural.
-    O mapeamento de palavras pode ser representado uma matriz $E \in \mathbb{R} ^{d \times |\sum|}$,
-    conforme verificado em \cite{collobert:2008} e \cite{stahlberg:2020}.
-    Conforme citado em \cite{stahlberg:2020} o aprendizado em represetan\c c\~oes de palavaras
-    tem o potencial de capturar a similaridade morfol\'ogica, sint\'atica e sem\^antica entre as 
-    palavras.
+    TODO       
     
     A Tradução Automática Neural poderia ser aplicada para a conversão dos dialetos RS274-D 
     para as Funções Canônicas de Usinagem. Porém, vale observar que isto demandaria a obtenção de 
