@@ -34,22 +34,19 @@
 
     \maketitle
 
-    Machine Translation correponds to the use of Machine Learning 
-    approach to translation text or speech from one language to 
-    another language. 
-    This goes back to the fifties. The process has been evolving since then.
+    Machine Translation (MT) is an important research field of 
+    Natural Language Processing (NLP) and correponds to the use 
+    of Machine Learning methods to translate text or speech from 
+    a source language to a target language. 
+    The idea of translating natural languages using computers dates 
+    back to the fifties.     
+    Around fifty years later, hardwares, data and softwares became 
+    capable of doing the basics of machine translation.
+    The MT process has evolved in both speed and precision and 
+    many MT strategies have emerged.
 
-
-    No inícios dos anos 2000, hardwares, dados e softwares de computadores se tornaram 
-    capazes de fazer o básico de machine translation. Os primeiros desenvolvedores usaram 
-    banco de dados estatísticos de idiomas para treinar computadores para traduzir textos. 
-    Isso demanda muito tempo e trabalho manual. Era necessário começar o desenvolvimento do 
-    zero para cada idioma adicionado. Desde então, a machine translation evoluiu tanto em 
-    velocidade quanto em precisão, e surgiram diversas estratégias de machine translation.
-
-
-    Until a few years ago the development of Machine Translation (MT) 
-    systems was mostly implemented by statistical techniques, known as 
+    Until a few years ago the development of MT systems was mostly 
+    implemented by statistical techniques, known as 
     Statistical Machine Translation (SMT).
     Those techniques became able to extract implicit information from
     \emph{copora bil\'ingues} , \cite{brown:1993}.
@@ -58,22 +55,10 @@
     inflexible. 
     
     Several works have boosted the employment of neural 
-    networks on Natural Language Processing (NLP), as noted by 
-    \cite{goldberg:2016}.
+    networks on NLP, as noted by \cite{goldberg:2016}.
     However, the majority of the approachs consist of using Neural Networks
     as components in traditonal systems, only replacing some parts of the
-    architecture, as verified by \cite{stahlberg:2020}.
-
-    An approach used to NLP processing consists of representing the words 
-    or sentences as continuous vector. This technique is used in language 
-    modeling to transform a word $x \in \sum$ in a vector of dimension 
-    $d$ of real numbers to be processed in subsequent layers of neural network.
-    The word mapping can be represented by a matrix  
-    $E \in \mathbb{R} ^{d \times |\sum|}$, as verified by \cite{collobert:2008} 
-    and \cite{stahlberg:2020}.
-    According to \cite{stahlberg:2020} the learning from words representation 
-    has the potential to capture morphological, syntactic and semantic 
-    similarity between words.    
+    architecture, as verified by \cite{stahlberg:2020}.   
 
     MT has advanced to the use of systems known as 
     Neural Machine Translation (NMT). These systems are based on Neural 
@@ -100,6 +85,11 @@
     weight is associated for each value. The weight is calculated through
     a function of compatibility between the question and the corresponding 
     key.
+
+    \section*{Final Considerations}
+
+
+
 
 \bibliographystyle{ieeetr}
 \bibliography{article} 
@@ -138,3 +128,15 @@
     Neural Network, ou CNN). O codificador e o decodificador s\~ao conectados e as sequ\^encias 
     temporais s\~ao preservadas. Os autores introduziram um mecanismo para tratar das 
     diferen\c cas entre o comprimento da origem e o comprimento do destino.
+
+
+    An approach used to NLP processing consists of representing the words 
+    or sentences as continuous vector. This technique is used in language 
+    modeling to transform a word $x \in \sum$ in a vector of dimension 
+    $d$ of real numbers to be processed in subsequent layers of neural network.
+    The word mapping can be represented by a matrix  
+    $E \in \mathbb{R} ^{d \times |\sum|}$, as verified by \cite{collobert:2008} 
+    and \cite{stahlberg:2020}.
+    According to \cite{stahlberg:2020} the learning from words representation 
+    has the potential to capture morphological, syntactic and semantic 
+    similarity between words.    
