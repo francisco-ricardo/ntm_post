@@ -34,7 +34,10 @@
 
     \maketitle
 
-    A graph can be defined by two sets: vertex set and edge set. 
+    A graph is a way to represent relationships between pairs 
+    of objects \cite{goodrich:2014} or entities.
+    A graph can be defined by a set of vertices and a collection 
+    of edges.
     Vertices represent entities in graph, whereas edges represent 
     relationships between those entities \cite{xia:2021}.
     In an abstract point of view, a graph \emph{G} is a set of vertex 
@@ -55,22 +58,27 @@
 
     The degree of a vertex \emph{v} (\emph{deg{v}}) corresponds to 
     the number of the incident edges to the vertex \emph{v}.
-    The input degree of a vertex \emph{v} consists of the number of 
-    incident edges in \emph{v}.
-    The output degree of a vertex \emph{v} is the number of 
-    incident edges from \emph{v}.
+    The input degree (\emph{indeg(v)}) of a vertex \emph{v} consists 
+    of the number of incident edges in \emph{v}.
+    The output degree (\emph{outdeg(v)}) of a vertex \emph{v} is the 
+    number of incident edges from \emph{v}.
+
+    If \emph{G} is a graph with \emph{m} edges, then:    
+    \[ \sum_{v \in G} deg(v) = 2m \]
+
+    If \emph{G} is a directed graph with \emph{m} edges, then:
+    \[ \sum_{v \in G} indeg(v) = \sum_{v \in G} outdeg(v) = m\]
 
 
  
     
 
 
-    representação matemática
     história
     aplicações práticas (enfatizar neo4j)
     código fonte
 
-        \cite{goodrich:2014}
+        
 
 
     \section*{Conclusion}
