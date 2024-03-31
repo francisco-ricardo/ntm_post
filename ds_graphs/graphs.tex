@@ -63,21 +63,43 @@
     The output degree (\emph{outdeg(v)}) of a vertex \emph{v} is the 
     number of incident edges from \emph{v}.
 
-    If \emph{G} is a graph with \emph{m} edges, then:    
-    \[ \sum_{v \in G} deg(v) = 2m \]
-    The definition above is justified by the fact that the dege 
+    If \emph{G} is a graph with \emph{m} edges, then:
+    \begin{equation} \label{eq1}
+        \sum_{v \in G} deg(v) = 2m
+    \end{equation}
+
+    The definition \ref{eq1} is justified by the fact that the dege 
     \emph{(u, v)} is counted twice, one for the endpoint \emph{(u)} and 
     another for the endpoint \emph{(v)}.
 
     If \emph{G} is a directed graph with \emph{m} edges, then:
-    \[ \sum_{v \in G} indeg(v) = \sum_{v \in G} outdeg(v) = m\]
+    \begin{equation} \label{eq2}
+        \sum_{v \in G} indeg(v) = \sum_{v \in G} outdeg(v) = m
+    \end{equation}
+
     In a directed graph one edge \emph{(u, v)} counts as one unit 
     for the output degree of the source \emph{u} and one unit for
     the input degree of the target \emph{v}.
 
+    Let us consider a simple graph with \emph{n} vertices and \emph{m} 
+    edges. If \emph{G} is not a directed graph, then:
+    \begin{equation} \label{eq3}
+        m \le n(n - 1) / 2 
+    \end{equation}
 
+    Two edges can not have the same start point and end point and there 
+    is no loops. So, a maximum degree of an edge in \emph{G} is $n - 1$. 
+    So, by the definition \ref{eq1}:
 
- 
+    \begin{equation} \label{eq4}
+        2m = n(n - 1)
+    \end{equation}
+
+    Based on the definition \ref{eq2}, the maximum degree of a vertex in \emph{G}
+    of a directed graph is:
+    \begin{equation}
+        m \le n(n-1)
+    \end{equation}
     
 
 
