@@ -37,7 +37,9 @@
     A graph is a way to represent relationships between pairs 
     of objects \cite{goodrich:2014} or entities.
     A graph can be defined by a set of vertices and a collection 
-    of edges.
+    of edges. The edges can contain a weight to represent an 
+    arbitrary value, such as cost, or distance, or quantify, 
+    for example.
     Vertices represent entities in graph, whereas edges represent 
     relationships between those entities \cite{xia:2021}.
     In an abstract point of view, a graph \emph{G} is a set of vertex 
@@ -45,9 +47,14 @@
 
     The graph may be directed, when the edges are ordered pairs 
     \emph{(u, v)} of vertices, with \emph{u} preceding \emph{v}.
-    The graph is undirected, when the edges are unordered pairs of 
-    vertices, also represented as \emph{(u, v)}.
+    This type of graph is also called digraph.
 
+    The graph is undirected, when the edges are unordered pairs of 
+    vertices, also represented as \emph{(u, v)}. In this type of 
+    graph, the edge \emph{(u, v)} is identical to the edge 
+    \emph{(v, u)}.
+
+    
     The two vertices connected by an edge are called endpoints.
     Adjacent vertices are two vertices that are joined by an edge.
     Adjacent edges are two edges that have an endpoint in common.
@@ -55,6 +62,10 @@
 
     An edge is incident to a vertex if the vertex is an endpoint of
     the edge.
+
+    Usually, the edges can be represented by a triplet 
+    \emph{(u, v, w)}, with \emph{u} and \emph{v} as 
+    the endpoints, and \emph{w} as the weight.
 
     The degree of a vertex \emph{v} (\emph{deg{v}}) corresponds to 
     the number of the incident edges to the vertex \emph{v}.
