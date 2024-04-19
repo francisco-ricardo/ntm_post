@@ -6,6 +6,14 @@
 
 \usepackage{listings}
 
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
+
+\usepackage{caption} 
+
+\captionsetup[table]{skip=10pt}
+
 \lstdefinestyle{mystyle}{
     basicstyle=\ttfamily\footnotesize,
     breakatwhitespace=false,
@@ -135,7 +143,37 @@
 
     código fonte
 
+    Adjacency List...
+
+    \begin{verbatim}
+        "a":
+            - "b"
+            - "d"
+        b:
+            - a
+            - c 
+            - d
+
+        { 
+            "a": ["b", "d"],
+            "b": ["a", "c", "d"]
+        }
+        \end{verbatim}
+
         
+        \begin{table}[H]
+            \centering
+            \caption{\label{tab:adjacency-matrix}Adjacency Matrix.}
+            \vspace*{10pt}
+            \begin{tabular}{ l|l|l|l|l|l|l| } 
+                    & 0 & 1 & 2 & 3 & 4 \\
+                \hline
+                0   & 0 & 1 & 0 & 0 & 1 \\
+                1   & 1 & 0 & 1 & 1 & 1\\
+                \hline
+            \end{tabular}
+        \end{table}
+
 
 
     \section*{Conclusion}
