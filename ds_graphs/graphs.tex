@@ -42,6 +42,17 @@
 
     \maketitle
 
+
+    TODO:
+    história
+    aplicações práticas (enfatizar neo4j)
+        networks (ideal ds for modeling networks), social networks
+        The applications of graphs include finding the shortest path, 
+        finding the best starting point, breadth-first and depth-first 
+        traversal, searching, inserting, deleting from a tree or 
+        linked list, graph classification, finding missing relationships 
+        through link prediction, and node classification.
+
     A graph is a way to represent relationships between pairs 
     of objects \cite{goodrich:2014} or entities.
     A graph can be defined by a set of vertices and a collection 
@@ -130,53 +141,48 @@
     A cycle is a path such that start vertex and end vertex are the same.
 
 
-    Adjacency Matrix
+    TODO: IMPLEMENTATION
 
-    Adjacency List
+    TODO: example, undirected graph
 
-    Edge List
+    https://algodaily.com/lessons/implementing-graphs-edge-list-adjacency-list-adjacency-matrix/java
+    
 
-    história
-    aplicações práticas (enfatizar neo4j)
-        networks (ideal ds for modeling networks), social networks
+    TODO: Edge List
+
+    Adjacency Matrix...
+
+        
+    \begin{table}[H]
+        \centering
+        \caption{\label{tab:adjacency-matrix}Adjacency Matrix.}
+        \vspace*{10pt}
+        \begin{tabular}{ l|l|l|l|l|l| } 
+                & a & b & c & d \\
+            \hline
+            a   & 0 & 5 & 0 & 1 \\
+            b   & 5 & 0 & 2 & 3 \\
+            c   & 0 & 2 & 0 & 6 \\
+            d   & 1 & 3 & 6 & 0 \\
+            \hline
+        \end{tabular}
+    \end{table}
 
 
-    código fonte
 
     Adjacency List...
 
     \begin{verbatim}
-        "a":
-            - "b"
-            - "d"
-        b:
-            - a
-            - c 
-            - d
-
         { 
             "a": ["b", "d"],
-            "b": ["a", "c", "d"]
+            "b": ["a", "c", "d"],
+            "c": ["b", "d"],
+            "d": ["a", "b", "c"]
         }
-        \end{verbatim}
-
-        
-        \begin{table}[H]
-            \centering
-            \caption{\label{tab:adjacency-matrix}Adjacency Matrix.}
-            \vspace*{10pt}
-            \begin{tabular}{ l|l|l|l|l|l| } 
-                    & a & b & c & d \\
-                \hline
-                a   & 0 & 5 & 0 & 1 \\
-                b   & 5 & 0 & 2 & 3 \\
-                c   & 0 & 2 & 0 & 6 \\
-                d   & 1 & 3 & 6 & 0 \\
-                \hline
-            \end{tabular}
-        \end{table}
+    \end{verbatim}
 
 
+    TODO: código fonte
 
     \section*{Conclusion}
 
