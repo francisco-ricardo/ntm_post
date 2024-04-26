@@ -43,6 +43,8 @@
     \maketitle
 
 
+    \section{Overview}
+
     TODO:
     história
     aplicações práticas (enfatizar neo4j)
@@ -140,15 +142,16 @@
     repeated edges or vertices (except possibly the initial and final vertices).
     A cycle is a path such that start vertex and end vertex are the same.
 
-
-    TODO: IMPLEMENTATION
-
-    TODO: example, undirected graph
-
-    https://algodaily.com/lessons/implementing-graphs-edge-list-adjacency-list-adjacency-matrix/java
+    \section{Implementation Strategies}    
     
+    The following sections will cover three implementation strategies for graphs.
+    The section \ref{edgelist} presents \emph{Edge Lists}.
+    The section \ref{adjacency_matrix} is about \emph{Adjacenty Matrix}.
 
-    TODO: Edge List, continuar tabela
+    \subsection{Edge List} \label{edgelist}
+
+    The more simple data structure for grpahs is Edge List.
+   
 
     \begin{table}[H]
         \centering
@@ -172,7 +175,7 @@
     \end{table}
 
 
-    Adjacency Matrix...
+    \subsection{Adjacency Matrix} \label{adjacency_matrix}
 
         
     \begin{table}[H]
@@ -213,6 +216,8 @@
 
 \end{document}
 
+
+https://algodaily.com/lessons/implementing-graphs-edge-list-adjacency-list-adjacency-matrix/java
 
 
 https://math.libretexts.org/Bookshelves/Combinatorics_and_Discrete_Mathematics/Combinatorics_and_Graph_Theory_(Guichard)/05%3A_Graph_Theory/5.01%3A_The_Basics_of_Graph_Theory
