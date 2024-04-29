@@ -11,6 +11,7 @@
 \restylefloat{table}
 
 \usepackage{caption} 
+\captionsetup[table]{skip=10pt}
 
 \captionsetup[table]{skip=10pt}
 
@@ -144,10 +145,23 @@
 
     \section{Implementation Strategies}    
     
-    The following sections will cover three implementation strategies for graphs.
-    The section \ref{edgelist} presents \emph{Edge Lists}.
-    The section \ref{adjacency_matrix} is about \emph{Adjacenty Matrix}.
 
+    The following sections will cover three implementation strategies for graphs.
+    The section \ref{edgelist} presents \emph{Edge List}.
+    The section \ref{adjacency_matrix} is about \emph{Adjacenty Matrix}.
+    The section \ref{adjacency_list} demonstrates \emph{Adjacency List}.
+
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=100mm]{images/graphs-undirected.png}
+        \vspace*{3mm}
+        \caption{Example Graph.}
+        \label{graph-algorithm-example}
+    \end{figure}
+
+
+    
     \subsection{Edge List} \label{edgelist}
 
     The more simple data structure for graphs is Edge List.
@@ -156,7 +170,7 @@
     represents a single edge and consists of the two distinct identifiers of the 
     vertices it connects. The edge list contains an entry for every line or edge 
     in the graph, and this one data structure stores all the vertices and their 
-    relationships.
+    relationships. The table \ref{tab:edge-list} 
 
     \begin{table}[H]
         \centering
@@ -200,7 +214,8 @@
 
 
 
-    Adjacency List...
+    \subsection{Adjacency List} \label{adjacency_list}
+
 
     \begin{verbatim}
         { 
