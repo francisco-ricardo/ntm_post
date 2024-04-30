@@ -13,7 +13,6 @@
 \usepackage{caption} 
 \captionsetup[table]{skip=10pt}
 
-\captionsetup[table]{skip=10pt}
 
 \lstdefinestyle{mystyle}{
     basicstyle=\ttfamily\footnotesize,
@@ -27,6 +26,12 @@
     tabsize=2
 }
 \lstset{style=mystyle}
+
+
+\usepackage{graphicx}%Inclusão de gráficos
+\graphicspath{{./images/}}%Images na pasta "images"
+
+\usepackage{caption}%Caption in two lines
 
 
 \title{
@@ -151,15 +156,16 @@
     The section \ref{adjacency_matrix} is about \emph{Adjacenty Matrix}.
     The section \ref{adjacency_list} demonstrates \emph{Adjacency List}.
 
+    Figure \ref{graph-algorithm-example} is a graph used to demonstrates
+    the graphs algorithms of the following sections.
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=100mm]{images/graphs-undirected.png}
+        \includegraphics[width=30mm]{images/graphs-undirected.png}
         \vspace*{3mm}
         \caption{Example Graph.}
         \label{graph-algorithm-example}
     \end{figure}
-
 
     
     \subsection{Edge List} \label{edgelist}
@@ -170,7 +176,7 @@
     represents a single edge and consists of the two distinct identifiers of the 
     vertices it connects. The edge list contains an entry for every line or edge 
     in the graph, and this one data structure stores all the vertices and their 
-    relationships. The table \ref{tab:edge-list} 
+    relationships. TODO The table \ref{tab:edge-list} 
 
     \begin{table}[H]
         \centering
