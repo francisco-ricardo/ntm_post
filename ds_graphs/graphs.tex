@@ -176,7 +176,9 @@
     represents a single edge and consists of the two distinct identifiers of the 
     vertices it connects. The edge list contains an entry for every line or edge 
     in the graph, and this one data structure stores all the vertices and their 
-    relationships. TODO The table \ref{tab:edge-list} 
+    relationships. 
+    
+     TODO The table \ref{tab:edge-list} 
 
     \begin{table}[H]
         \centering
@@ -198,6 +200,31 @@
             \hline            
         \end{tabular}
     \end{table}
+
+    TODO The table \ref{tab:edge-list-o} presents the 
+    time big $\mathcal{O}$ notation for each method of the 
+    \emph{Graph} class.
+    The space complexity is $\mathcal{O}(m+n)$, where 
+    \emph{m} is the number of edges and \emph{n} is the 
+    number of vertices of the graph.
+
+    \begin{table}[H]
+        \centering
+        \caption{\label{tab:edge-list-o}Edge List Big O.}
+        \vspace*{10pt}
+        \begin{tabular}{ |l|l|l| } 
+            \hline
+            Method & Description & Time \\
+            \hline
+            \emph{getVertices} & 
+                Returns the list of the vertices & 
+                $\mathcal{O}(n)$ \\
+            \hline
+        \end{tabular}
+    \end{table}
+
+
+
 
 
     \subsection{Adjacency Matrix} \label{adjacency_matrix}
